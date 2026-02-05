@@ -1,13 +1,39 @@
 # Sycamore Backend Assessment
 
-> **Technical Interview Answers:** The written responses to the interview questions (Transactions, Type Safety, Performance, and Collaboration) can be found in the submission document here:  
-> **[ View Interview Question Answers (Google Doc)](https://docs.google.com/document/d/1q9BMhFJ4NOaE11VBdq8nzFgvUwowi5A92ahPeZfNWnY/edit?usp=sharing)**
+> **Technical Interview Answers:** The written responses to the interview questions (Transactions, Type Safety, Performance, and Collaboration) can be found in the official submission document here:  
+> **[View Interview Question Answers (Google Doc)](https://docs.google.com/document/d/1q9BMhFJ4NOaE11VBdq8nzFgvUwowi5A92ahPeZfNWnY/edit?usp=sharing)**
 
 ---
 
 # Sycamore Wallet & Interest Service
 
 A robust Fintech backend implementation featuring a secure wallet transfer system with idempotency protection and a high-precision daily interest accumulator.
+
+---
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Tech Stack](#tech-stack)
+- [Architectural Choices](#architectural-choices)
+  - [Atomic Transactions & Race Conditions](#1-atomic-transactions--race-conditions)
+  - [Idempotency Strategy](#2-idempotency-strategy)
+  - [Financial Precision](#3-financial-precision)
+- [Database Schema](#database-schema)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Testing](#testing)
+  - [Setup Test Database](#setup-test-database)
+  - [Run Tests](#run-tests)
+- [Test Coverage](#test-coverage)
+- [Transfer Endpoint – Sample Request Bodies](#transfer-endpoint--sample-request-bodies)
+  - [Successful Transfer](#successful-transfer)
+  - [Idempotency Test](#idempotency-test)
+  - [Insufficient Balance](#insufficient-balance)
+  - [Invalid Wallet ID](#invalid-wallet-id)
+  - [Self Transfer](#self-transfer-sender-equals-recipient)
+  - [Missing Required Fields](#missing-required-fields-validation-failure)
 
 ---
 
