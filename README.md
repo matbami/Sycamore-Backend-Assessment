@@ -139,7 +139,7 @@ Standard JavaScript floats are avoided for all financial math.
    npx sequelize-cli db:seed:all
 ```
 
-5. **Run Code**
+6. **Run Code**
 
 ```bash
    npm run dev
