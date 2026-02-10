@@ -104,8 +104,7 @@ Standard JavaScript floats are avoided for all financial math.
 1. **Clone the repository:**
 
 ```bash
-   git clone <your-repo-link>
-   cd sycamore-test
+   git clone https://github.com/matbami/Sycamore-Backend-Assessment.git
 ```
 
 2. **Install dependencies:**
